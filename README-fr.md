@@ -216,7 +216,7 @@ west build -p always -b esp32c3_devkitm blink
 Pour rendre le tutoriel plus générique, nous n’utilisons pas la LED intégrée mais une LED externe branchée sur la **GPIO2**.
 
 [Figure 1: Esp32 schéma du montage](./doc/ZephyrEsp32BlinkTutorial.drawio.png)
-*Figure 1: Schéma du montage*
+
 #### Device Tree utilisé
 Le device tree a pour rôle de :
 1. configurer la **pin 2** en mode GPIO
@@ -274,7 +274,8 @@ west flash
 ```
 ### 5. Flash du firmware sur une nucleo-f446re
 L’une des grandes forces de Zéphyr réside dans sa **portabilité inégalée** pour vos projets bare-metal. Pour l’illustrer, nous allons porter le projet _blink_ sur une carte **Nucleo-F446RE**, en utilisant cette fois la **LED2 (LD2)** intégrée.
-![[Diagramme sans nom.drawio.png]]
+
+[Figure 2: schéma Nucleo-F446re](./doc/ZephyrNucleoF446re.png)
 
 L’intégration du projet _blink_ sur STM32 avec Zéphyr se limite à la création d’un **device tree overlay** spécifique à la Nucleo-F446RE. Voici son contenu :
 ```dtc
