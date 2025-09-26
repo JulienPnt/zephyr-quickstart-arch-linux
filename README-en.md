@@ -182,13 +182,16 @@ We will compile and flash the `blink` example on an **ESP32-C3 DevKitM** or **ST
 ### 1. Creating the Project
 1. Create a project directory:
    ```bash
-   mkdir -p ~/zephyr-workspace/apps/blink
+   mkdir -p ~/zephyr-workspace/apps
    ```
-2. Clone the repository:
+2. Clone the repo and retrieve the blink project from it:
    ```bash
-   git clone <repo_blink> ~/zephyr-workspace/apps/blink
-   ```
-   The repository contains:
+```bash
+  cd /tmp
+  git clone git@github.com:JulienPnt/zephyr-quickstart-arch-linux.git
+  mv zephyr-quickstart-arch-linux/examples/blink ~/zephyr-workspace/apps/.
+  ```
+The repository contains:
    - `boards/`: **Overlay** files (Device Tree) for each supported board
    - `CMakeLists.txt`: Build configuration
    - `prj.conf`: Project configuration (enabled Zephyr modules)
