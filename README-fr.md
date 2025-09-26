@@ -215,7 +215,7 @@ west build -p always -b esp32c3_devkitm blink
 ### 3. Préparation de la carte et initiation au device-tree
 Pour rendre le tutoriel plus générique, nous n’utilisons pas la LED intégrée mais une LED externe branchée sur la **GPIO2**.
 
-![[./doc/ZephyrEsp32BlinkTutorial.drawio.png]]
+[Figure 1: Esp32 schéma du montage](./doc/ZephyrEsp32BlinkTutorial.drawio.png)
 *Figure 1: Schéma du montage*
 #### Device Tree utilisé
 Le device tree a pour rôle de :
