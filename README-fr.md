@@ -1,6 +1,6 @@
 # Guide de démarrage rapide de Zephyr sur Aarch Linux
 
-> [!NOTE] La rédaction et la traduction de cette note a été assisté par IA (Mistral/ChatGPT).
+> La rédaction et la traduction de cette note a été assisté par IA (Mistral/ChatGPT).
 
 ## Introduction
 Note : Ce tutoriel s’inspire du [Quick Start Guide officiel de Zéphyr](https://zephyrproject.org/zephyr-os-getting-started-on-manjaro-arch-linux/), mais tente d'aller au-delà.
@@ -16,9 +16,12 @@ Vous devez déjà savoir installer et configurer :
 - Kitty
 - Zsh
 - Git
+
 Pour une utilisation optimal de ce tutoriel, vous devez avoir à disposition :
 - [esp32-c3-devkitm-1](https://docs.zephyrproject.org/latest/boards/espressif/esp32c3_devkitm/doc/index.html)
 - [stm32-nucleo-f446re](https://www.st.com/en/evaluation-tools/nucleo-f446re.html)
+
+D'autres cartes d'évaluations peuvent être utilisées. Elles demanderont cependant d'éditer des surcouches de devices tree spécifiques sur le projet blink (ce qui est un bon exercise !).
 
 ---
 ## Sommaire
@@ -38,7 +41,7 @@ sudo pacman -S python-pip python-setuptools python-wheel python-pyserial gperf w
 ```
 *Commande d'installations*
 
-Veuillez trouver une description de chaque paquets installé ci-dessous :
+Veuillez trouver une description de chaque paquet installé ci-dessous :
 
 |Paquet|Usage|
 |---|---|
@@ -212,7 +215,7 @@ west build -p always -b esp32c3_devkitm blink
 ### 3. Préparation de la carte et initiation au device-tree
 Pour rendre le tutoriel plus générique, nous n’utilisons pas la LED intégrée mais une LED externe branchée sur la **GPIO2**.
 
-![[ZephyrEsp32BlinkTutorial.drawio.png]]
+![[./doc/ZephyrEsp32BlinkTutorial.drawio.png]]
 *Figure 1: Schéma du montage*
 #### Device Tree utilisé
 Le device tree a pour rôle de :
