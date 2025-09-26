@@ -1,2 +1,2 @@
-[English version](./README-en.md)
-[Version Française](./README-fr.md)
+- [English version](./README-en.md)
+- [Version Française](./README-fr.md)
