@@ -184,11 +184,13 @@ Nous allons compiler et flasher l’exemple `blink` sur une carte **ESP32-C3 Dev
 ### 1. Création du projet
 1. Créer un dossier projet :
 ```bash
-mkdir -p ~/zephyr-workspace/apps/blink
+mkdir ~/zephyr-workspace/apps
 ```
-2. Récupérer le dépôt :
+2. Récupérer le projet blink depuis le dépôt :
 ```bash
-git clone <repo_blink> ~/zephyr-workspace/apps/blink
+cd /tmp
+git clone git@github.com:JulienPnt/zephyr-quickstart-arch-linux.git
+mv zephyr-quickstart-arch-linux/examples/blink ~/zephyr-workspace/apps/.
 ```
 Le dépôt contient :
 - `boards/` : fichiers **overlay** (Device Tree) pour chaque carte supportée
